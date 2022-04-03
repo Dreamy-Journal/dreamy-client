@@ -24,7 +24,8 @@ export default function Login() {
                 password: data.password
             }
 
-            await axios.post("http://localhost:3001/auth/login", loginData)
+            await axios.post("https://dreamy-journal.herokuapp.com/auth/login", loginData)
+            // await axios.post("http://localhost:3001/auth/login", loginData)
 
             // update global then navigate to home
             const result = await getLoggedIn()
