@@ -1,0 +1,39 @@
+@import 'fonts';
+@import 'colors';
+@import 'mediaQ';
+@import'components/Login';
+@import'components/Register';
+@import'components/DreamForm';
+@import'components/DreamList';
+@import "bootstrap";
+
+// universals
+* {
+    font-family: 'Epilogue', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+p {
+    color: white;
+}
+
+.container {
+    width: 80% !important;
+}
+
+.auth-link {
+    color: $blue;
+}
+
+.journal-container {
+    background: $purple;
+}
+
+.btn-primary {
+    color: white !important;
+}
