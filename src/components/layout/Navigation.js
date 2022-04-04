@@ -18,12 +18,12 @@ export default function Navigation() {
                         <>
                             <Nav.Item>
                                 <Nav.Link>
-                                    <Link to='/' className='nav-link'>Login</Link>
+                                    <Link to='/' className='nav-link-custom'>Login</Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link>
-                                    <Link to='/register' className='nav-link'>Register</Link>
+                                    <Link to='/register' className='nav-link-custom'>Register</Link>
                                 </Nav.Link>
                             </Nav.Item>
                         </>
@@ -32,7 +32,7 @@ export default function Navigation() {
                         <>
                             <Nav.Item>
                                 <Nav.Link>
-                                    <Link to='/journal' className='nav-link'>Journal</Link>
+                                    <Link to='/journal' className='nav-link-custom'>Journal</Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
