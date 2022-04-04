@@ -27,7 +27,7 @@ export default function Navigation() {
                     {loggedIn === true &&
                         <>
                             <Nav.Item>
-                                <Nav.Link to='/journal'>Journal</Nav.Link>
+                                <Link to='/journal'>Journal</Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <LogOutBtn />
