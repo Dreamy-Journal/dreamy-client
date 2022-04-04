@@ -18,12 +18,12 @@ export default function Navigation() {
                         <>
                             <Nav.Item>
                                 <Nav.Link>
-                                    <Link to='/'>Login</Link>
+                                    <Link to='/' className='nav-link'>Login</Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link>
-                                    <Link to='/register'>Register</Link>
+                                    <Link to='/register' className='nav-link'>Register</Link>
                                 </Nav.Link>
                             </Nav.Item>
                         </>
@@ -32,7 +32,7 @@ export default function Navigation() {
                         <>
                             <Nav.Item>
                                 <Nav.Link>
-                                    <Link to='/journal'>Journal</Link>
+                                    <Link to='/journal' className='nav-link'>Journal</Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
