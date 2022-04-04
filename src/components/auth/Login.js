@@ -29,10 +29,8 @@ export default function Login() {
 
             // update global then navigate to home
             const result = await getLoggedIn()
-            console.log(result)
             navigate('/journal')
         } catch (err) {
-            // console.log(err.message)
             setError('Please correct your email/password')
 
         }

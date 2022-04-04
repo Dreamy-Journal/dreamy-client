@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import AuthContext from '../../context/AuthContext'
 import LogOutBtn from '../auth/LogOutBtn'
 
@@ -16,10 +17,10 @@ export default function Navigation() {
                     {loggedIn === false && (
                         <>
                             <Nav.Item>
-                                <Nav.Link href='/'>Login</Nav.Link>
+                                <Link to='/'>Login</Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href='/register'>Register</Nav.Link>
+                                <Link to='/register'>Register</Link>
                             </Nav.Item>
                         </>
                     )}
