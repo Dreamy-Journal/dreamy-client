@@ -17,17 +17,23 @@ export default function Navigation() {
                     {loggedIn === false && (
                         <>
                             <Nav.Item>
-                                <Link to='/'>Login</Link>
+                                <Nav.Link>
+                                    <Link to='/'>Login</Link>
+                                </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Link to='/register'>Register</Link>
+                                <Nav.Link>
+                                    <Link to='/register'>Register</Link>
+                                </Nav.Link>
                             </Nav.Item>
                         </>
                     )}
                     {loggedIn === true &&
                         <>
                             <Nav.Item>
-                                <Link to='/journal'>Journal</Link>
+                                <Nav.Link>
+                                    <Link to='/journal'>Journal</Link>
+                                </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <LogOutBtn />
