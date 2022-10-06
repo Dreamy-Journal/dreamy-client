@@ -28,7 +28,8 @@ export default function DreamForm({ getJournal }) {
             tag
         }
         try {
-            await axios.post('https://dreamy-journal.herokuapp.com/journal', dreamData)
+            await axios.post('https://dreamy.onrender.com/journal', dreamData)
+            // await axios.post('https://dreamy-journal.herokuapp.com/journal', dreamData)
             // await axios.post('http://localhost:3001/journal', dreamData)
             getJournal(); //make http req to rerender page
             // refresh values

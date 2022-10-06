@@ -10,21 +10,24 @@ export default function Journal() {
 
     // get all customers from db, set local array
     const getJournal = async () => {
-        const journalRes = await axios.get('https://dreamy-journal.herokuapp.com/journal')
+        const journalRes = await axios.get('https://dreamy.onrender.com/journal')
+        // const journalRes = await axios.get('https://dreamy-journal.herokuapp.com/journal')
         // const journalRes = await axios.get('http://localhost:3001/journal')
         setJournal(journalRes.data)
     }
 
     const updateEntry = async (entryId, newTitle, newDescription, newRating, newTag) => {
         const updatedEntry = { entryId, newTitle, newDescription, newRating, newTag }
-        await axios.put('https://dreamy-journal.herokuapp.com/journal', updatedEntry)
+        await axios.put('https://dreamy.onrender.com/journal', updatedEntry)
+        // await axios.put('https://dreamy-journal.herokuapp.com/journal', updatedEntry)
         // await axios.put('http://localhost:3001/journal', updatedEntry)
         getJournal()
     }
 
     const deleteEntry = async (entryId) => {
         const toDelete = { entryId }
-        await axios.delete('https://dreamy-journal.herokuapp.com/journal', { data: toDelete })
+        await axios.delete('https://dreamy.onrender.com/journal', { data: toDelete })
+        // await axios.delete('https://dreamy-journal.herokuapp.com/journal', { data: toDelete })
         // await axios.delete('http://localhost:3001/journal', { data: toDelete })
         getJournal()
     }

@@ -11,8 +11,9 @@ export default function LogOutBtn() {
 
     // clear the cookie
     const logOut = async () => {
+        await axios.get('https://dreamy.onrender.com/auth/logout')
         // await axios.get('http://localhost:3001/auth/logout')
-        await axios.get('https://dreamy-journal.herokuapp.com/auth/logout')
+        // await axios.get('https://dreamy-journal.herokuapp.com/auth/logout')
         await getLoggedIn()
         navigate('/')
 

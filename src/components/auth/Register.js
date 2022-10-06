@@ -26,7 +26,8 @@ export default function Register() {
                 email: data.email,
                 password: data.password,
             }
-            await axios.post("https://dreamy-journal.herokuapp.com/auth/", registerData)
+            await axios.post("https://dreamy.onrender.com/auth/", registerData)
+            // await axios.post("https://dreamy-journal.herokuapp.com/auth/", registerData)
             // await axios.post("http://localhost:3001/auth/", registerData)
 
             // update global then navigate to home
@@ -44,14 +45,16 @@ export default function Register() {
 
     // google login
     const loginGoogle = () => {
-        window.open('https://dreamy-journal.herokuapp.com/auth/google', '_self')
+        window.open('https://dreamy.onrender.com/auth/google', '_self')
+        // window.open('https://dreamy-journal.herokuapp.com/auth/google', '_self')
         // window.open('http://localhost:3001/auth/google', '_self')
     }
 
     // get jwt token from apo then navigate to the 'journal' page
     const getToken = async () => {
         try {
-            const res = await axios.get('https://dreamy-journal.herokuapp.com/auth/login/success')
+            const res = await axios.get('https://dreamy.onrender.com/auth/login/success')
+            // const res = await axios.get('https://dreamy-journal.herokuapp.com/auth/login/success')
             // const res = await axios.get('http://localhost:3001/auth/login/success')
             if (res.status === 200) {
                 await getLoggedIn()

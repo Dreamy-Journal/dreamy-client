@@ -11,7 +11,8 @@ export function AuthContextProvider(props) {
 
     const getLoggedIn = async () => {
         // const loggedInRes = await axios.get("http://localhost:3001/auth/loggedIn")
-        const loggedInRes = await axios.get("https://dreamy-journal.herokuapp.com/auth/loggedIn")
+        const loggedInRes = await axios.get("https://dreamy.onrender.com/auth/loggedIn")
+        // const loggedInRes = await axios.get("https://dreamy-journal.herokuapp.com/auth/loggedIn")
         setLoggedIn(loggedInRes.data)
     }
 
